@@ -1,4 +1,7 @@
 .DS_Store
 
+# file with app data
+data.json
+
 # virtual environment folder
 myenv
