@@ -5,6 +5,16 @@ import matplotlib.pyplot as plt
 from Dish import Dish
 from Data import load_data, save_data
 class App:
+    '''
+    Класс приложения для учёта ежедневных приемов пищи
+    
+    Поля класса:
+    data - словарь с данными о блюдах (дата: [блюда])
+    root - tkinter окно приложения
+    entries - словарь с введенными значениями в полях
+    analyze_entries - словарь с введенными датами для анализа
+    tree - tkinter Treeview для отображения блюд
+    '''
     def __init__(self, data):
         self.data = data
         load_data()
